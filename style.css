@@ -1,0 +1,108 @@
+body,h1,h2,h3,h4,h5,h6{
+    font-family: 'Roboto', sans-serif;
+}
+.slider-section{
+    background: url(./img/ia_200000012.jpg) no-repeat center center;
+    padding: 200px 0;
+    position: relative;
+    z-index: 1;
+}
+.slider-section::after{
+    content: "";
+    background: rgba(0, 0, 0, 0.383);
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+}
+
+/* header */
+.jon-header{
+
+}
+span {
+    color: #FC5E03;
+    border: 1px solid #FC5E03;
+   
+    display: inline-block;
+    border-radius: 9px;
+    padding: 1px 1px;
+   
+}
+.logo{
+font-weight: 500;
+}
+.btn-outline-primary {
+    color: #fd5b0d;
+    border-color: #fd3b0d;
+    
+    font-weight: 500;
+}
+
+/* about */
+.about-section{
+    background: #F7F9FF;
+}
+.about-paragraph {
+    padding: 130px 20px;
+}
+.feature{
+    width: 250px;
+    
+}
+/* feature-secrtion */
+.feature-item {
+    height: 300px;
+    box-shadow: 3px 1px 8px rgb(131 128 128 / 43%);
+   
+}
+.left-img {
+    width: 40%;
+    overflow: hidden;
+    margin-right: 17px;
+}
+.right-text{
+width: 60%;
+}
+.feature {
+    height: 100%;
+    width: auto;
+    max-width: inherit;
+    position: relative;
+    left: -25px;
+}
+
+.number-section{
+    background: #f4f9faea;
+}
+.health{
+    margin-left: 32px;
+    font-size: 35px;
+}
+.portfolio-item{
+position: relative;
+}
+.portfolio-item::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(70, 66, 66, 0.555);
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    visibility: hidden;
+    transition: .3s;
+}
+.portfolio-item:hover::after{
+    visibility: visible;
+    opacity: 1;
+}
+
+.portfolio-item img{
+    max-width: 100%;
+}
+ 
+
